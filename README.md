@@ -1,6 +1,8 @@
 # Database System Term Project
 완전히 비정규화(unnormalization)된 대규모 데이터 청크(116,350개의 행, 42개의 열, 약 2.45GB)를 제공받아 개체-관계 모델(Entity-Relationship Model, ERM), 정규화(normalization), 역정규화(denormalization), 인덱스(index)를 사용하여 용량 및 시간적인 면에서 좋은 데이터베이스 스키마를 설계하는 프로젝트입니다.
 
+![Term Project](https://github.com/sehyeongcho/database-system-term-project/assets/124948262/01cf5e8a-e507-4f50-90bb-56672ae54493)
+
 ## 프로젝트 목표
 - 이 프로젝트에서는, KUBiC 프로젝트 팀으로부터 제공받은 완전히 비정규화된 대규모 데이터 청크를 관리하기 위한 좋은 데이터베이스 스키마를 설계해야 합니다. (좋다는 것은 용량 및 시간 면에서 효율적임을 의미합니다.)
   - <a href="https://kubic.handong.edu/" target="_blank">KUBiC (Korean Unification Bigdata Center)</a>
