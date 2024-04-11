@@ -1,0 +1,48 @@
+[데이터 청크 열 분석]
+
+1) _id: 활성화된 사용자의 ID
+2) isAdmin: 사용자가 관리자인지 아닌지 여부
+3) isApiUser: 사용자가 Api 사용자인지 아닌지 여부
+4) name: 사용자의 이름
+5) email: 사용자의 이메일 주소
+6) inst: 사용자가 속한 기관
+7) status: 사용자의 신분
+8) userId: 비활성화된 ID도 포함한 사용자의 ID
+9) registeredDate: 사용자가 계정을 등록한 날짜
+10) modifiedDate: 사용자가 계정을 수정한 날짜
+
+11) isActive: 계정이 활성화 상태인지 아닌지 여부(사용자의 탈퇴 여부)
+12) type: 게시판의 이름
+13) title: 게시판에 들어가면 보이는 전광판의 제목
+14) content: 게시판에 들어가면 보이는 전광판의 내용
+15) writerName: 게시판에 들어가면 보이는 글쓰기 창에서 사용자의 이름
+16) writerEmail: 게시판에 들어가면 보이는 글쓰기 창에서 사용자의 이메일 주소
+17) regDate: 게시판에 들어가면 보이는 전광판의 글이 등록된 날짜(faqs 게시판은 regDate가 없음)
+18) modDate: 게시판에 들어가면 보이는 전광판의 글이 수정된 날짜(faqs 게시판은 modDate가 없음)
+19) docID: 게시판에 들어가면 보이는 전광판의 글의 번호
+20) isMainAnnounce: announcements 게시판에 들어가면 보이는 전광판의 글이 주요공지인지 아닌지 여부
+
+21) category: faqs 게시판에서 사용하는 질문 카테고리
+22) userEmail: 문서를 마이페이지에 저장하는 사용자의 이메일 주소
+23) keyword: 문서를 마이페이지에 저장할 때 사용하는 키워드
+24) savedDate: 문서를 마이페이지에 저장한 날짜
+25) savedDocHashKeys: 마이페이지에 저장한 문서의 hash key(게시된 문서가 아닌 엉뚱한 것을 저장했을 경우 undefined)
+26) post_title: 게시된 문서의 제목
+27) post_writer: 게시된 문서의 작성자
+28) post_date: 게시된 문서의 작성일자
+29) post_body: 게시된 문서의 내용
+30) published_institution: 문서의 출판 기관
+
+31) published_institution_url: 문서의 출판 기관의 공식사이트 링크
+32) top_category: 게시된 문서의 카테고리, 문서가 수집된 사이트에서 분류한 카테고리
+33) original_url: 게시된 문서의 원본 링크(게시된 문서는 링크가 없는 문서일 수 있음)
+34) file_download_url: 게시된 문서에 첨부된 파일을 다운로드 받을 수 있는 링크(게시된 문서는 링크가 없는 문서이더라도 파일은 첨부되어 있을 수 있음)
+35) file_name: 게시된 문서에 첨부된 파일의 이름(링크는 있으나 이름은 없는 파일이 있을 수 있음, 이름은 있으나 링크가 없는 경우는 없음)
+36) file_id_in_fsfiles: 
+37) file_extracted_content: 게시된 문서에 첨부된 파일을 추출한 내용
+38) timestamp:
+39) hash_key: 게시된 문서의 hash key
+40) topic: 문서의 주제(주제가 지정되지 않은 문서가 있을 수 있음), 시스템에서 자체적으로 분리한 카테고리(정치, 경제, 사회, ...)
+
+41) docTitle: 문서의 제목(게시되지 않은 문서의 제목도 포함), post_title은 있으나 docTitle은 null인 경우도 있음
+42) hashKey: docTitle 문서의 hash key(게시되지 않은 문서의 hash key도 포함)
